@@ -13,6 +13,7 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
+@ComponentScan
 public class SpringConfig {
 
     @Bean
