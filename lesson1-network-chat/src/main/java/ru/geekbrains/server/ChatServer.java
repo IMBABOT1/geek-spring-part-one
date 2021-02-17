@@ -1,5 +1,6 @@
 package ru.geekbrains.server;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.geekbrains.client.AuthException;
 import ru.geekbrains.client.TextMessage;
@@ -27,8 +28,8 @@ public class ChatServer {
     private AuthService authService;
     private Map<String, ClientHandler> clientHandlerMap = Collections.synchronizedMap(new HashMap<>());
 
-    public ChatServer(AuthService authService) {
-        this.authService = authService;
+    @Autowired
+    public ChatServer() {
     }
 
     public void start(int port) {

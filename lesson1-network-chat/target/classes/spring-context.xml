@@ -7,7 +7,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns="http://www.springframework.org/schema/beans">
     
-    <context:component-scan base-package="ru.geekbrains.server"/>
+    <context:component-scan base-package="ru.geekbrains.server.SpringConfig"/>
 
 <!--    <bean id="chatServer" class="ru.geekbrains.server.ChatServer">-->
 <!--        <constructor-arg ref="authService"/>-->
