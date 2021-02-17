@@ -13,7 +13,6 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 
 @Configuration
-@ComponentScan
 public class SpringConfig {
 
     @Bean
@@ -35,9 +34,9 @@ public class SpringConfig {
     public DataSource dataSource() {
         DriverManagerDataSource ds = new DriverManagerDataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("root");
+        ds.setUsername("root");
         ds.setPassword("IMBABOTGg2A7Vyz");
-        ds.setUrl("jdbc:mysql://localhost:3306/network_chat?&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC");
+        ds.setUrl("jdbc:mysql://localhost:3306/network_chat?&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
         return ds;
     }
 }
